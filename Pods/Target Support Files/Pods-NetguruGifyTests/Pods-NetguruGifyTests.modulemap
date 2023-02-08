@@ -1,0 +1,6 @@
+framework module Pods_NetguruGifyTests {
+  umbrella header "Pods-NetguruGifyTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

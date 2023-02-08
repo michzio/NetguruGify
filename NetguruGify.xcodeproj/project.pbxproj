@@ -1,0 +1,823 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B8A10E063103C2801D31664 /* Pods_NetguruGify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A85AB326A863DEFE19257760 /* Pods_NetguruGify.framework */; };
+		141E7469BA77262BC7AEB1D6 /* Pods_NetguruGifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955F15E914E121C244C47FE9 /* Pods_NetguruGifyTests.framework */; };
+		84888ADA230F19B70065D017 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84888AD9230F19B70065D017 /* AppDelegate.swift */; };
+		84888ADC230F19B70065D017 /* GifyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84888ADB230F19B70065D017 /* GifyListViewController.swift */; };
+		84888AE1230F19B80065D017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84888AE0230F19B80065D017 /* Assets.xcassets */; };
+		84888AEF230F19B90065D017 /* NetguruGifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84888AEE230F19B90065D017 /* NetguruGifyTests.swift */; };
+		84888AFC230F1A310065D017 /* GifyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84888AFB230F1A310065D017 /* GifyDetailsViewController.swift */; };
+		84888AFE230F1F330065D017 /* PaginatedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84888AFD230F1F330065D017 /* PaginatedCollectionViewController.swift */; };
+		84888B01230F1FC70065D017 /* Gify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84888B00230F1FC70065D017 /* Gify.swift */; };
+		84888B05230F27280065D017 /* SpinnerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84888B04230F27280065D017 /* SpinnerCollectionViewCell.swift */; };
+		84888B08230F28960065D017 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84888B07230F28960065D017 /* UIViewExtensions.swift */; };
+		84888B0A230F298B0065D017 /* GifyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84888B09230F298B0065D017 /* GifyCollectionViewCell.swift */; };
+		84888B0C230F30250065D017 /* PaginationMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84888B0B230F30250065D017 /* PaginationMetadata.swift */; };
+		84888B0E230F34000065D017 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84888B0D230F34000065D017 /* Settings.swift */; };
+		84888B11230F34590065D017 /* GifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84888B10230F34590065D017 /* GifyService.swift */; };
+		84888B13230F38FC0065D017 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84888B12230F38FC0065D017 /* BaseService.swift */; };
+		84888B15230F404A0065D017 /* ElementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84888B14230F404A0065D017 /* ElementCollectionViewCell.swift */; };
+		84888B17230F4CD50065D017 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84888B16230F4CD50065D017 /* ImageLoader.swift */; };
+		84888B19230FA4720065D017 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84888B18230FA4720065D017 /* UIImageExtensions.swift */; };
+		84888B3D231074020065D017 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84888B3C231074020065D017 /* ModelTests.swift */; };
+		84888B3F23107E6C0065D017 /* ListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84888B3E23107E6C0065D017 /* ListViewControllerTests.swift */; };
+		84888B4123107FB90065D017 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 84888B4023107FB90065D017 /* sample.json */; };
+		84888B44231081E90065D017 /* GifyServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84888B43231081E90065D017 /* GifyServiceMock.swift */; };
+		84888B4C2310875F0065D017 /* NetguruGifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84888B4B2310875F0065D017 /* NetguruGifyUITests.swift */; };
+		84888B5423108C660065D017 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84888B5323108C660065D017 /* StringExtensions.swift */; };
+		84888B56231095030065D017 /* FileCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84888B55231095020065D017 /* FileCacher.swift */; };
+		84888B582310AD2F0065D017 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84888B572310AD2F0065D017 /* UIViewControllerExtensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84888AEB230F19B90065D017 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84888ACE230F19B70065D017 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84888AD5230F19B70065D017;
+			remoteInfo = NetguruGify;
+		};
+		84888B4E2310875F0065D017 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84888ACE230F19B70065D017 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84888AD5230F19B70065D017;
+			remoteInfo = NetguruGify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E860FA1088A8DCE954FA975 /* Pods-NetguruGify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetguruGify.release.xcconfig"; path = "Target Support Files/Pods-NetguruGify/Pods-NetguruGify.release.xcconfig"; sourceTree = "<group>"; };
+		67E6E42155BA759E9E97DD40 /* Pods-NetguruGifyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetguruGifyTests.debug.xcconfig"; path = "Target Support Files/Pods-NetguruGifyTests/Pods-NetguruGifyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		84888AD6230F19B70065D017 /* NetguruGify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetguruGify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84888AD9230F19B70065D017 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84888ADB230F19B70065D017 /* GifyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifyListViewController.swift; sourceTree = "<group>"; };
+		84888AE0230F19B80065D017 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84888AE5230F19B80065D017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84888AEA230F19B90065D017 /* NetguruGifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetguruGifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84888AEE230F19B90065D017 /* NetguruGifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetguruGifyTests.swift; sourceTree = "<group>"; };
+		84888AF0230F19B90065D017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84888AFB230F1A310065D017 /* GifyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifyDetailsViewController.swift; sourceTree = "<group>"; };
+		84888AFD230F1F330065D017 /* PaginatedCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedCollectionViewController.swift; sourceTree = "<group>"; };
+		84888B00230F1FC70065D017 /* Gify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gify.swift; sourceTree = "<group>"; };
+		84888B04230F27280065D017 /* SpinnerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerCollectionViewCell.swift; sourceTree = "<group>"; };
+		84888B07230F28960065D017 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		84888B09230F298B0065D017 /* GifyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifyCollectionViewCell.swift; sourceTree = "<group>"; };
+		84888B0B230F30250065D017 /* PaginationMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationMetadata.swift; sourceTree = "<group>"; };
+		84888B0D230F34000065D017 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		84888B10230F34590065D017 /* GifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifyService.swift; sourceTree = "<group>"; };
+		84888B12230F38FC0065D017 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		84888B14230F404A0065D017 /* ElementCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementCollectionViewCell.swift; sourceTree = "<group>"; };
+		84888B16230F4CD50065D017 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		84888B18230FA4720065D017 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		84888B34231073D70065D017 /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
+		84888B36231073D70065D017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84888B3C231074020065D017 /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
+		84888B3E23107E6C0065D017 /* ListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewControllerTests.swift; sourceTree = "<group>"; };
+		84888B4023107FB90065D017 /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
+		84888B43231081E90065D017 /* GifyServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifyServiceMock.swift; sourceTree = "<group>"; };
+		84888B492310875F0065D017 /* NetguruGifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetguruGifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84888B4B2310875F0065D017 /* NetguruGifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetguruGifyUITests.swift; sourceTree = "<group>"; };
+		84888B4D2310875F0065D017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84888B5323108C660065D017 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		84888B55231095020065D017 /* FileCacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCacher.swift; sourceTree = "<group>"; };
+		84888B572310AD2F0065D017 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		955F15E914E121C244C47FE9 /* Pods_NetguruGifyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetguruGifyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A85AB326A863DEFE19257760 /* Pods_NetguruGify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetguruGify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E00F1ABE43CB577EAEE5C930 /* Pods-NetguruGify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetguruGify.debug.xcconfig"; path = "Target Support Files/Pods-NetguruGify/Pods-NetguruGify.debug.xcconfig"; sourceTree = "<group>"; };
+		F46DFF3210BB62D33338BD6E /* Pods-NetguruGifyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetguruGifyTests.release.xcconfig"; path = "Target Support Files/Pods-NetguruGifyTests/Pods-NetguruGifyTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84888AD3230F19B70065D017 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B8A10E063103C2801D31664 /* Pods_NetguruGify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84888AE7230F19B90065D017 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				141E7469BA77262BC7AEB1D6 /* Pods_NetguruGifyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84888B462310875F0065D017 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A57AEEEC066D8032C2F7CF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E00F1ABE43CB577EAEE5C930 /* Pods-NetguruGify.debug.xcconfig */,
+				1E860FA1088A8DCE954FA975 /* Pods-NetguruGify.release.xcconfig */,
+				67E6E42155BA759E9E97DD40 /* Pods-NetguruGifyTests.debug.xcconfig */,
+				F46DFF3210BB62D33338BD6E /* Pods-NetguruGifyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		58A784008A81924D648A4476 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A85AB326A863DEFE19257760 /* Pods_NetguruGify.framework */,
+				955F15E914E121C244C47FE9 /* Pods_NetguruGifyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84888ACD230F19B70065D017 = {
+			isa = PBXGroup;
+			children = (
+				84888AD8230F19B70065D017 /* NetguruGify */,
+				84888AED230F19B90065D017 /* NetguruGifyTests */,
+				84888B33231073D70065D017 /* ModelTests */,
+				84888B4A2310875F0065D017 /* NetguruGifyUITests */,
+				84888AD7230F19B70065D017 /* Products */,
+				2A57AEEEC066D8032C2F7CF0 /* Pods */,
+				58A784008A81924D648A4476 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84888AD7230F19B70065D017 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84888AD6230F19B70065D017 /* NetguruGify.app */,
+				84888AEA230F19B90065D017 /* NetguruGifyTests.xctest */,
+				84888B492310875F0065D017 /* NetguruGifyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84888AD8230F19B70065D017 /* NetguruGify */ = {
+			isa = PBXGroup;
+			children = (
+				84888B42231081D80065D017 /* Mocks */,
+				84888B0F230F34480065D017 /* Services */,
+				84888B06230F28890065D017 /* Extensions */,
+				84888AFF230F1FB50065D017 /* Model */,
+				84888AFA230F19FD0065D017 /* Controllers */,
+				84888AF9230F19E50065D017 /* Supporting Files */,
+				84888B0D230F34000065D017 /* Settings.swift */,
+			);
+			path = NetguruGify;
+			sourceTree = "<group>";
+		};
+		84888AED230F19B90065D017 /* NetguruGifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				84888B3E23107E6C0065D017 /* ListViewControllerTests.swift */,
+				84888B3C231074020065D017 /* ModelTests.swift */,
+				84888AEE230F19B90065D017 /* NetguruGifyTests.swift */,
+				84888AF0230F19B90065D017 /* Info.plist */,
+				84888B4023107FB90065D017 /* sample.json */,
+			);
+			path = NetguruGifyTests;
+			sourceTree = "<group>";
+		};
+		84888AF9230F19E50065D017 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84888AD9230F19B70065D017 /* AppDelegate.swift */,
+				84888AE0230F19B80065D017 /* Assets.xcassets */,
+				84888AE5230F19B80065D017 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84888AFA230F19FD0065D017 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84888B02230F26FF0065D017 /* GifyList */,
+				84888AFB230F1A310065D017 /* GifyDetailsViewController.swift */,
+				84888AFD230F1F330065D017 /* PaginatedCollectionViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84888AFF230F1FB50065D017 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84888B00230F1FC70065D017 /* Gify.swift */,
+				84888B0B230F30250065D017 /* PaginationMetadata.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84888B02230F26FF0065D017 /* GifyList */ = {
+			isa = PBXGroup;
+			children = (
+				84888B03230F270A0065D017 /* Cells */,
+				84888ADB230F19B70065D017 /* GifyListViewController.swift */,
+			);
+			path = GifyList;
+			sourceTree = "<group>";
+		};
+		84888B03230F270A0065D017 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				84888B04230F27280065D017 /* SpinnerCollectionViewCell.swift */,
+				84888B09230F298B0065D017 /* GifyCollectionViewCell.swift */,
+				84888B14230F404A0065D017 /* ElementCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		84888B06230F28890065D017 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84888B07230F28960065D017 /* UIViewExtensions.swift */,
+				84888B18230FA4720065D017 /* UIImageExtensions.swift */,
+				84888B5323108C660065D017 /* StringExtensions.swift */,
+				84888B572310AD2F0065D017 /* UIViewControllerExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		84888B0F230F34480065D017 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84888B10230F34590065D017 /* GifyService.swift */,
+				84888B12230F38FC0065D017 /* BaseService.swift */,
+				84888B16230F4CD50065D017 /* ImageLoader.swift */,
+				84888B55231095020065D017 /* FileCacher.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		84888B33231073D70065D017 /* ModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				84888B34231073D70065D017 /* ModelTests.swift */,
+				84888B36231073D70065D017 /* Info.plist */,
+			);
+			path = ModelTests;
+			sourceTree = "<group>";
+		};
+		84888B42231081D80065D017 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				84888B43231081E90065D017 /* GifyServiceMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		84888B4A2310875F0065D017 /* NetguruGifyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84888B4B2310875F0065D017 /* NetguruGifyUITests.swift */,
+				84888B4D2310875F0065D017 /* Info.plist */,
+			);
+			path = NetguruGifyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84888AD5230F19B70065D017 /* NetguruGify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84888AF3230F19B90065D017 /* Build configuration list for PBXNativeTarget "NetguruGify" */;
+			buildPhases = (
+				EE76AB8E1A312E6657C9BA17 /* [CP] Check Pods Manifest.lock */,
+				84888AD2230F19B70065D017 /* Sources */,
+				84888AD3230F19B70065D017 /* Frameworks */,
+				84888AD4230F19B70065D017 /* Resources */,
+				3A1C075F4D015D15AD6278F9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetguruGify;
+			productName = NetguruGify;
+			productReference = 84888AD6230F19B70065D017 /* NetguruGify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84888AE9230F19B90065D017 /* NetguruGifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84888AF6230F19B90065D017 /* Build configuration list for PBXNativeTarget "NetguruGifyTests" */;
+			buildPhases = (
+				69DA1B102C05B6992CC8568F /* [CP] Check Pods Manifest.lock */,
+				84888AE6230F19B90065D017 /* Sources */,
+				84888AE7230F19B90065D017 /* Frameworks */,
+				84888AE8230F19B90065D017 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84888AEC230F19B90065D017 /* PBXTargetDependency */,
+			);
+			name = NetguruGifyTests;
+			productName = NetguruGifyTests;
+			productReference = 84888AEA230F19B90065D017 /* NetguruGifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84888B482310875F0065D017 /* NetguruGifyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84888B502310875F0065D017 /* Build configuration list for PBXNativeTarget "NetguruGifyUITests" */;
+			buildPhases = (
+				84888B452310875F0065D017 /* Sources */,
+				84888B462310875F0065D017 /* Frameworks */,
+				84888B472310875F0065D017 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84888B4F2310875F0065D017 /* PBXTargetDependency */,
+			);
+			name = NetguruGifyUITests;
+			productName = NetguruGifyUITests;
+			productReference = 84888B492310875F0065D017 /* NetguruGifyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84888ACE230F19B70065D017 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Netguru Task";
+				TargetAttributes = {
+					84888AD5230F19B70065D017 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					84888AE9230F19B90065D017 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 84888AD5230F19B70065D017;
+					};
+					84888B482310875F0065D017 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 84888AD5230F19B70065D017;
+					};
+				};
+			};
+			buildConfigurationList = 84888AD1230F19B70065D017 /* Build configuration list for PBXProject "NetguruGify" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84888ACD230F19B70065D017;
+			productRefGroup = 84888AD7230F19B70065D017 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84888AD5230F19B70065D017 /* NetguruGify */,
+				84888AE9230F19B90065D017 /* NetguruGifyTests */,
+				84888B482310875F0065D017 /* NetguruGifyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84888AD4230F19B70065D017 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84888AE1230F19B80065D017 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84888AE8230F19B90065D017 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84888B4123107FB90065D017 /* sample.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84888B472310875F0065D017 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A1C075F4D015D15AD6278F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetguruGify/Pods-NetguruGify-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetguruGify/Pods-NetguruGify-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetguruGify/Pods-NetguruGify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69DA1B102C05B6992CC8568F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetguruGifyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE76AB8E1A312E6657C9BA17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetguruGify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84888AD2230F19B70065D017 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84888B17230F4CD50065D017 /* ImageLoader.swift in Sources */,
+				84888ADC230F19B70065D017 /* GifyListViewController.swift in Sources */,
+				84888B08230F28960065D017 /* UIViewExtensions.swift in Sources */,
+				84888B01230F1FC70065D017 /* Gify.swift in Sources */,
+				84888B15230F404A0065D017 /* ElementCollectionViewCell.swift in Sources */,
+				84888B11230F34590065D017 /* GifyService.swift in Sources */,
+				84888B0C230F30250065D017 /* PaginationMetadata.swift in Sources */,
+				84888B582310AD2F0065D017 /* UIViewControllerExtensions.swift in Sources */,
+				84888B0E230F34000065D017 /* Settings.swift in Sources */,
+				84888B19230FA4720065D017 /* UIImageExtensions.swift in Sources */,
+				84888ADA230F19B70065D017 /* AppDelegate.swift in Sources */,
+				84888AFE230F1F330065D017 /* PaginatedCollectionViewController.swift in Sources */,
+				84888B56231095030065D017 /* FileCacher.swift in Sources */,
+				84888B13230F38FC0065D017 /* BaseService.swift in Sources */,
+				84888B0A230F298B0065D017 /* GifyCollectionViewCell.swift in Sources */,
+				84888B05230F27280065D017 /* SpinnerCollectionViewCell.swift in Sources */,
+				84888AFC230F1A310065D017 /* GifyDetailsViewController.swift in Sources */,
+				84888B44231081E90065D017 /* GifyServiceMock.swift in Sources */,
+				84888B5423108C660065D017 /* StringExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84888AE6230F19B90065D017 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84888B3F23107E6C0065D017 /* ListViewControllerTests.swift in Sources */,
+				84888AEF230F19B90065D017 /* NetguruGifyTests.swift in Sources */,
+				84888B3D231074020065D017 /* ModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84888B452310875F0065D017 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84888B4C2310875F0065D017 /* NetguruGifyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84888AEC230F19B90065D017 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84888AD5230F19B70065D017 /* NetguruGify */;
+			targetProxy = 84888AEB230F19B90065D017 /* PBXContainerItemProxy */;
+		};
+		84888B4F2310875F0065D017 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84888AD5230F19B70065D017 /* NetguruGify */;
+			targetProxy = 84888B4E2310875F0065D017 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		84888AF1230F19B90065D017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84888AF2230F19B90065D017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84888AF4230F19B90065D017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E00F1ABE43CB577EAEE5C930 /* Pods-NetguruGify.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X543KA83M8;
+				INFOPLIST_FILE = "NetguruGify/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.michalziobro.NetguruGify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		84888AF5230F19B90065D017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E860FA1088A8DCE954FA975 /* Pods-NetguruGify.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X543KA83M8;
+				INFOPLIST_FILE = "NetguruGify/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.michalziobro.NetguruGify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		84888AF7230F19B90065D017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67E6E42155BA759E9E97DD40 /* Pods-NetguruGifyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X543KA83M8;
+				INFOPLIST_FILE = NetguruGifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.michalziobro.NetguruGifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetguruGify.app/NetguruGify";
+			};
+			name = Debug;
+		};
+		84888AF8230F19B90065D017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F46DFF3210BB62D33338BD6E /* Pods-NetguruGifyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X543KA83M8;
+				INFOPLIST_FILE = NetguruGifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.michalziobro.NetguruGifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetguruGify.app/NetguruGify";
+			};
+			name = Release;
+		};
+		84888B512310875F0065D017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X543KA83M8;
+				INFOPLIST_FILE = NetguruGifyUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.michalziobro.NetguruGifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NetguruGify;
+			};
+			name = Debug;
+		};
+		84888B522310875F0065D017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X543KA83M8;
+				INFOPLIST_FILE = NetguruGifyUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.michalziobro.NetguruGifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NetguruGify;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84888AD1230F19B70065D017 /* Build configuration list for PBXProject "NetguruGify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84888AF1230F19B90065D017 /* Debug */,
+				84888AF2230F19B90065D017 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84888AF3230F19B90065D017 /* Build configuration list for PBXNativeTarget "NetguruGify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84888AF4230F19B90065D017 /* Debug */,
+				84888AF5230F19B90065D017 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84888AF6230F19B90065D017 /* Build configuration list for PBXNativeTarget "NetguruGifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84888AF7230F19B90065D017 /* Debug */,
+				84888AF8230F19B90065D017 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84888B502310875F0065D017 /* Build configuration list for PBXNativeTarget "NetguruGifyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84888B512310875F0065D017 /* Debug */,
+				84888B522310875F0065D017 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84888ACE230F19B70065D017 /* Project object */;
+}
